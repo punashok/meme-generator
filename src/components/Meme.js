@@ -21,7 +21,7 @@ export default function Meme() {
     
     
 
-    React.useEffect(async function () {
+    React.useEffect(function () {
         fetch("https://api.imgflip.com/get_memes")
             .then(resp => resp.json())
             .then(data => setMemes(data.data.memes))
